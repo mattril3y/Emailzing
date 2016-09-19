@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Emailzing.UI
+namespace Emailzing.UI.Views
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for Email.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class Email : UserControl
 	{
-		public MainWindow()
+		public Email()
 		{
 			InitializeComponent();
 		}

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Practices.Unity;
 using System.Windows;
 
 namespace Emailzing.UI
@@ -13,5 +8,12 @@ namespace Emailzing.UI
 	/// </summary>
 	public partial class App : Application
 	{
+		protected override void OnStartup(StartupEventArgs e)
+		{
+			base.OnStartup(e);
+
+			var mainWindow = new Views.MainWindow();
+			mainWindow.Show();
+		}
 	}
 }

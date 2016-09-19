@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emailzing.UI.Tests", "Email
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emailzing.UI", "Emailzing.UI\Emailzing.UI.csproj", "{FA243301-57D3-4C38-A09B-E1642EB2EBFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emailzing.Service", "Emailzing.Service\Emailzing.Service.csproj", "{C4436456-BD50-4F48-966F-ED8468801DC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FA243301-57D3-4C38-A09B-E1642EB2EBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA243301-57D3-4C38-A09B-E1642EB2EBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA243301-57D3-4C38-A09B-E1642EB2EBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4436456-BD50-4F48-966F-ED8468801DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4436456-BD50-4F48-966F-ED8468801DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4436456-BD50-4F48-966F-ED8468801DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4436456-BD50-4F48-966F-ED8468801DC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
