@@ -73,15 +73,16 @@
     </ApplicationDefinition>
     <Compile Include="ViewModels\IEmailNavigationViewModel.cs" />
     <Compile Include="ViewModels\IEmailViewModel.cs" />
+    <Compile Include="DataProviders\INavigationDataProvider.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\EmailViewModel.cs" />
+    <Compile Include="ViewModels\EmailNavigationViewModel.cs" />
     <Compile Include="Views\EmailNavigation.xaml.cs">
       <DependentUpon>EmailNavigation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\EmailViewModel.cs" />
-    <Compile Include="ViewModels\EmailNavigationViewModel.cs" />
-    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -89,14 +90,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\EmailNavigation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\EmailNavigation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Startup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emailzing.Model\Emailzing.Model.csproj">
+      <Project>{12ba6eb9-74e1-47e9-82db-f9fc3acd2a94}</Project>
+      <Name>Emailzing.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

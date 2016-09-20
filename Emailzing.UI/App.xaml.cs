@@ -12,6 +12,7 @@ namespace Emailzing.UI
 		{
 			base.OnStartup(e);
 
+			//TODO: Replace this using unity to inject the dependencies
 			var mainWindow = new Views.MainWindow();
 			mainWindow.Show();
 		}

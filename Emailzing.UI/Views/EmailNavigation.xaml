@@ -8,6 +8,13 @@
 			 d:DesignHeight="300" d:DesignWidth="150">
 	<ScrollViewer>
 		<ItemsControl ItemsSource="{Binding Emails}">
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Button>
+						<TextBlock Text="{Binding DisplayMember}"/>
+					</Button>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
 		</ItemsControl>
 	</ScrollViewer>
 </UserControl>
