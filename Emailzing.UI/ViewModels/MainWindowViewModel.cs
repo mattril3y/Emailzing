@@ -8,6 +8,16 @@ namespace Emailzing.UI.ViewModels
 {
 	public class MainWindowViewModel
 	{
+		private readonly IEmailNavigationViewModel _emailNavigationViewModel;
 
+		public MainWindowViewModel(IEmailNavigationViewModel emailNavigationViewModel)
+		{
+			_emailNavigationViewModel = emailNavigationViewModel;
+		}
+
+		internal void Load()
+		{
+			_emailNavigationViewModel.Load();
+		}
 	}
 }

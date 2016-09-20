@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emailzing.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,14 +15,18 @@ using System.Windows.Shapes;
 
 namespace Emailzing.UI.Views
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
 	public partial class MainWindow : Window
 	{
-		public MainWindow()
+		private readonly MainWindowViewModel _viewModel;
+
+		public MainWindow(MainWindowViewModel mainWindowViewModel)
 		{
 			InitializeComponent();
+
+			_viewModel = mainWindowViewModel;
+			DataContext = _viewModel;
+
+			_viewModel.Load();
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿using Emailzing.UI.ViewModels.DataProviders;
+﻿using Emailzing.UI.DataProviders;
 using Emailzing.UI.Views;
 using System;
 using System.Collections.Generic;
@@ -21,9 +21,13 @@ namespace Emailzing.UI.ViewModels
 
 		public void Load()
 		{
-
+			foreach (var email in _navigationDataProvider.GetEmails())
+			{
+				Emails.Add(
+					new EmailViewModel());
+			}
 		}
 
-		public ReadOnlyCollection<Email> Emails { get; private set; }
+		public ObservableCollection<EmailViewModel> Emails { get; private set; }
 	}
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Emailzing.Service
+namespace Emailzing.Model
 {
 	public interface IService
 	{

@@ -71,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataProviders\NavigationDataProvider.cs" />
     <Compile Include="ViewModels\IEmailNavigationViewModel.cs" />
     <Compile Include="ViewModels\IEmailViewModel.cs" />
     <Compile Include="DataProviders\INavigationDataProvider.cs" />
@@ -138,6 +139,10 @@
     <ProjectReference Include="..\Emailzing.Model\Emailzing.Model.csproj">
       <Project>{12ba6eb9-74e1-47e9-82db-f9fc3acd2a94}</Project>
       <Name>Emailzing.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emailzing.Service\Emailzing.Service.csproj">
+      <Project>{c4436456-bd50-4f48-966f-ed8468801dc1}</Project>
+      <Name>Emailzing.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
