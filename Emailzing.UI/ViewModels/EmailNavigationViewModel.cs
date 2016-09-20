@@ -1,11 +1,5 @@
 ﻿using Emailzing.UI.DataProviders;
-using Emailzing.UI.Views;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Emailzing.UI.ViewModels
 {
@@ -16,6 +10,7 @@ namespace Emailzing.UI.ViewModels
 		public EmailNavigationViewModel(
 			INavigationDataProvider navigationDataProvider)
 		{
+			Emails = new ObservableCollection<EmailViewModel>();
 			_navigationDataProvider = navigationDataProvider;
 		}
 
@@ -24,7 +19,11 @@ namespace Emailzing.UI.ViewModels
 			foreach (var email in _navigationDataProvider.GetEmails())
 			{
 				Emails.Add(
-					new EmailViewModel());
+					new EmailViewModel(
+						email.Title, 
+						email.From, 
+						email.Day, 
+						email.Content));
 			}
 		}
 

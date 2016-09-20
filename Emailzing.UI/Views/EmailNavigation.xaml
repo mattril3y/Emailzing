@@ -10,9 +10,7 @@
 		<ItemsControl ItemsSource="{Binding Emails}">
 			<ItemsControl.ItemTemplate>
 				<DataTemplate>
-					<Button>
-						<TextBlock Text="{Binding DisplayMember}"/>
-					</Button>
+					<local:Email/>
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>

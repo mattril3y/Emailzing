@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Emailzing.UI.Views
 {
-	/// <summary>
-	/// Interaction logic for EmailNavigation.xaml
-	/// </summary>
 	public partial class EmailNavigation : UserControl
 	{
 		public EmailNavigation()

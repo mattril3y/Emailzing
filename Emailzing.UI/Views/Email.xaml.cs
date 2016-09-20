@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emailzing.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace Emailzing.UI.Views
 {
-	/// <summary>
-	/// Interaction logic for Email.xaml
-	/// </summary>
 	public partial class Email : UserControl
 	{
 		public Email()
