@@ -72,6 +72,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataProviders\NavigationDataProvider.cs" />
+    <Compile Include="Startup\Bootstrapper.cs" />
     <Compile Include="ViewModels\IEmailNavigationViewModel.cs" />
     <Compile Include="ViewModels\IEmailViewModel.cs" />
     <Compile Include="DataProviders\INavigationDataProvider.cs" />
@@ -132,9 +133,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Startup\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Emailzing.Model\Emailzing.Model.csproj">
       <Project>{12ba6eb9-74e1-47e9-82db-f9fc3acd2a94}</Project>

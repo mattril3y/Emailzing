@@ -1,5 +1,6 @@
 ﻿using Emailzing.Model;
 using Emailzing.UI.DataProviders;
+using Emailzing.UI.Startup;
 using Microsoft.Practices.Unity;
 using System.Windows;
 
@@ -14,14 +15,8 @@ namespace Emailzing.UI
 		{
 			base.OnStartup(e);
 
-			//TODO: Replace this using unity to inject the dependencies
-			var mainWindow = new Views.MainWindow(
-				new ViewModels.MainWindowViewModel(
-					new ViewModels.EmailNavigationViewModel(
-						new NavigationDataProvider(
-							new Service()))));
-
-			mainWindow.Show();
+			var container = Bootstrapper.RegisterTypes();
+			container.Resolve<Views.MainWindow>().Show();
 		}
 	}
 }
