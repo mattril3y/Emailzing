@@ -6,7 +6,7 @@
 			 xmlns:local="clr-namespace:Emailzing.UI.Views"
 			 mc:Ignorable="d" 
 			 d:DesignHeight="40" d:DesignWidth="150">
-	<Grid Background="DarkGray">
+	<Grid Background="LightGray">
 		<Grid.RowDefinitions>
 			<RowDefinition></RowDefinition>
 			<RowDefinition></RowDefinition>
@@ -19,9 +19,9 @@
 			<ColumnDefinition></ColumnDefinition>
 		</Grid.ColumnDefinitions>
 
-		<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content="{Binding From}"  HorizontalAlignment="Left"></Label>
-		<Label Grid.Row="0" Grid.Column="3" Foreground="Black" Content="{Binding Day}" HorizontalAlignment="Right"></Label>
-		<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content ="{Binding Title}" HorizontalAlignment="Left"></Label>
+		<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content="{Binding From}" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left"></Label>
+		<Label Grid.Row="0" Grid.Column="3" Foreground="Gray" Content="{Binding Day}" HorizontalAlignment="Right"></Label>
+		<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content ="{Binding Title}" FontWeight="SemiBold" FontSize="12" HorizontalAlignment="Left"></Label>
 		<Label Grid.Row="3" Grid.ColumnSpan="3" Foreground="Black" Content="{Binding Content}" HorizontalAlignment="Left"></Label>
 
 	</Grid>

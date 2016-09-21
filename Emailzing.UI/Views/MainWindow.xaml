@@ -5,10 +5,10 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:Emailzing.UI.Views"
 		mc:Ignorable="d"
-		Title="Emailzing" Height="300" Width="300">
+		Title="Emailzing" Height="500" Width="1000">
 	<Grid>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition Width="300"></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
 		</Grid.ColumnDefinitions>
 		
