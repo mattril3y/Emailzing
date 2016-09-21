@@ -2,7 +2,7 @@
 
 namespace Emailzing.UI.ViewModels
 {
-	public class EmailViewModel : IEmailViewModel
+	public class EmailViewModel
 	{
 		public EmailViewModel(
 			string title, 

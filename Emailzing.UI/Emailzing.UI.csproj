@@ -73,10 +73,13 @@
     </ApplicationDefinition>
     <Compile Include="DataProviders\NavigationDataProvider.cs" />
     <Compile Include="Startup\Bootstrapper.cs" />
+    <Compile Include="ViewModels\ContentViewModel.cs" />
     <Compile Include="ViewModels\IEmailNavigationViewModel.cs" />
-    <Compile Include="ViewModels\IEmailViewModel.cs" />
     <Compile Include="DataProviders\INavigationDataProvider.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\Content.xaml.cs">
+      <DependentUpon>Content.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\Content.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Email.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
