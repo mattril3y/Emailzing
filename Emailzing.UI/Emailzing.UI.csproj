@@ -71,9 +71,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="DataProviders\NavigationDataProvider.cs" />
     <Compile Include="Startup\Bootstrapper.cs" />
     <Compile Include="ViewModels\ContentViewModel.cs" />
+    <Compile Include="ViewModels\IContentViewModel.cs" />
     <Compile Include="ViewModels\IEmailNavigationViewModel.cs" />
     <Compile Include="DataProviders\INavigationDataProvider.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />

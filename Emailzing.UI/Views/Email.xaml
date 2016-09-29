@@ -6,23 +6,25 @@
 			 xmlns:local="clr-namespace:Emailzing.UI.Views"
 			 mc:Ignorable="d" 
 			 d:DesignHeight="40" d:DesignWidth="150">
-	<Grid Background="LightGray">
-		<Grid.RowDefinitions>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-		</Grid.RowDefinitions>
+	<Button Command="{Binding OpenEmailCommand}">
+		<Grid Background="LightGray">
+			<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
 
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-		</Grid.ColumnDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
 
-		<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content="{Binding From}" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left"></Label>
-		<Label Grid.Row="0" Grid.Column="3" Foreground="Gray" Content="{Binding Day}" HorizontalAlignment="Right"></Label>
-		<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content ="{Binding Title}" FontWeight="SemiBold" FontSize="12" HorizontalAlignment="Left"></Label>
-		<Label Grid.Row="3" Grid.ColumnSpan="3" Foreground="Black" Content="{Binding Content}" HorizontalAlignment="Left"></Label>
+			<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content="{Binding From}" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left"></Label>
+			<Label Grid.Row="0" Grid.Column="3" Foreground="Gray" Content="{Binding Day}" HorizontalAlignment="Right"></Label>
+			<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Black" Content ="{Binding Title}" FontWeight="SemiBold" FontSize="12" HorizontalAlignment="Left"></Label>
+			<Label Grid.Row="3" Grid.ColumnSpan="3" Foreground="Black" Content="{Binding Content}" HorizontalAlignment="Left"></Label>
 
-	</Grid>
+		</Grid>
+	</Button>
 </UserControl>

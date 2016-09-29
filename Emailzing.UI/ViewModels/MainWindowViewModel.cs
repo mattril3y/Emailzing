@@ -2,16 +2,20 @@
 {
 	public class MainWindowViewModel
 	{
-		public MainWindowViewModel(IEmailNavigationViewModel emailNavigationViewModel)
+		public MainWindowViewModel(
+			IEmailNavigationViewModel emailNavigationViewModel,
+			IContentViewModel contentViewModel)
 		{
 			EmailNavigationViewModel = emailNavigationViewModel;
+			ContentViewModel = contentViewModel;
 		}
 
-		internal void Load()
+		public void Load()
 		{
-			EmailNavigationViewModel.Load();
+			EmailNavigationViewModel.Load(ContentViewModel);
 		}
 
 		public IEmailNavigationViewModel EmailNavigationViewModel { get; private set; }
+		public IContentViewModel ContentViewModel { get; set; }
 	}
 }

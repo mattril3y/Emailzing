@@ -16,6 +16,7 @@
 			<RowDefinition></RowDefinition>	
 		</Grid.RowDefinitions>
 
-		<local:EmailNavigation DataContext="{Binding EmailNavigationViewModel}" Grid.Column="0"/>
+		<local:EmailNavigation Grid.Column="0" DataContext="{Binding EmailNavigationViewModel}"/>
+		<local:Content Grid.Column="1" DataContext="{Binding ContentViewModel}"/>
 	</Grid>
 </Window>

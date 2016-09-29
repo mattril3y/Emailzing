@@ -15,5 +15,7 @@ namespace Emailzing.Model
 		public string Content { get; set; }
 
 		public string Day { get; set; }
+		public string To { get; set; }
+		public string FullTime { get; set; }
 	}
 }

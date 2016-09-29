@@ -12,8 +12,10 @@ namespace Emailzing.UI.Startup
 			container.RegisterType<Views.MainWindow>();
 			container.RegisterType<ViewModels.MainWindowViewModel>();
 			container.RegisterType<ViewModels.IEmailNavigationViewModel, ViewModels.EmailNavigationViewModel>();
+			container.RegisterType<ViewModels.IContentViewModel, ViewModels.ContentViewModel>();
 			container.RegisterType<INavigationDataProvider, NavigationDataProvider>();
 			container.RegisterType<IService, Service>();
+
 
 			return container;
 		}

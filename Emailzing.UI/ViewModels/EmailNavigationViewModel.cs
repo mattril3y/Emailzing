@@ -1,5 +1,6 @@
 ﻿using Emailzing.UI.DataProviders;
 using System.Collections.ObjectModel;
+using System;
 
 namespace Emailzing.UI.ViewModels
 {
@@ -14,16 +15,14 @@ namespace Emailzing.UI.ViewModels
 			_navigationDataProvider = navigationDataProvider;
 		}
 
-		public void Load()
+		public void Load(IContentViewModel contentViewModel)
 		{
 			foreach (var email in _navigationDataProvider.GetEmails())
 			{
 				Emails.Add(
 					new EmailViewModel(
-						email.Title, 
-						email.From, 
-						email.Day, 
-						email.Content));
+						email,
+						contentViewModel));
 			}
 		}
 

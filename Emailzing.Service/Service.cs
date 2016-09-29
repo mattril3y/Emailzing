@@ -17,8 +17,10 @@ namespace Emailzing.Model
 				{
 					Title = "Urgent information",
 					Day = "Friday",
-					From = "HSBC",
-					Content = "Your email address needs to be updated in our records, please contact us as soon as possible"
+					From = "Virgin Money",
+					Content = "Your credit card payment is now due.",
+					To = "Matt Riley",
+					FullTime = String.Concat(DateTime.Now.ToShortDateString(), " - " ,DateTime.Now.ToShortTimeString())
 				});
 
 			emails.Add(
@@ -27,7 +29,9 @@ namespace Emailzing.Model
 					Title = "Urgent information",
 					Day = "Thursday",
 					From = "HSBC",
-					Content = "Your email address needs to be updated in our records, please contact us as soon as possible"
+					Content = "Your email address needs to be updated in our records, please contact us as soon as possible",
+					To = "Matt Riley",
+					FullTime = String.Concat(DateTime.Now.ToShortDateString(), " - ",DateTime.Now.ToShortTimeString())
 				});
 
 			emails.Add(
@@ -35,8 +39,10 @@ namespace Emailzing.Model
 				{
 					Title = "Urgent information",
 					Day = "Wednesday",
-					From = "HSBC",
-					Content = "Your email address needs to be updated in our records, please contact us as soon as possible"
+					From = "CO-OP Bank",
+					Content = "This is a spam email",
+					To = "Matt Riley",
+					FullTime = String.Concat(DateTime.Now.ToShortDateString(), " - ",DateTime.Now.ToShortTimeString())
 				});
 
 			return 

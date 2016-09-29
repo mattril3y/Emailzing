@@ -2,6 +2,6 @@
 {
 	public interface IEmailNavigationViewModel
 	{
-		void Load();
+		void Load(IContentViewModel contentViewModel);
 	}
 }
